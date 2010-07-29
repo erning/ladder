@@ -14,9 +14,7 @@ def decode():
     print 'File "{0}" has been created and ready to be edit'.format(fn_plain)
 
 def edit():
-    editor = os.environ['EDITOR']
-    if editor == '':
-        editor = 'vi'
+    editor = 'vi'
     os.system('{0} {1}'.format(editor, fn_plain))
 
 def encode():
